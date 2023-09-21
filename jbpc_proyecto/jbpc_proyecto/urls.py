@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from jbpc_app2 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('vistas/', views.displayvist),
+    path('hora/', views.displayDateTime),
+    path('datos/', views.displaydatos),
 ]
